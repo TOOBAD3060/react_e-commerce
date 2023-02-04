@@ -1,0 +1,39 @@
+@media (min-width:501px){
+    .first-section{
+        /* margin-top: 3em; */
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.first-section article h1{
+    font-size: 30px;
+}
+.first-section article p{
+    color: gray;
+    margin: 15px 0;
+}
+.first-section article button{
+    padding: 7px 15px;
+    border-radius: 20px;
+    background-color: rgb(150, 0, 0);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:500px){
+    .first-section article#display{
+        display: none;
+    }
+    .first-section {
+        text-align: center;
+        padding: 50px 30px;
+    }
+    .first-section article h1{
+        font-size: 30px;
+    }
+    
+}

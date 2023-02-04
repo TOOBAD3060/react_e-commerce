@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+    margin: 2em 0;
+}
+h2::after{
+    content: '';
+    display: inline-block;
+    
+    width: 50px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+    bottom: -10px;
+    left: -115px;
+    
+}
+.products{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+.each img {
+    width: 180px;
+    height: 200px;
+    color: red;
+    transition: all 0.5s;
+}
+.each img:hover{
+    transform: translateY(-10px);
+}
+.each p{
+    color: gray;
+
+}
+.each span{
+    color: brown;
+}
+@media (max-width:790px){
+    .products{
+        display: grid;
+        justify-content: space-around;
+        /* grid-template-columns: 1fr; */
+        gap: 30px;
+    }
+    .products.mobile-hidden{
+        display: none;
+    }
+}

@@ -1,0 +1,129 @@
+button{
+  cursor: pointer;
+  border: none;
+}
+/* Sort btn */
+button.sort{
+    color: #fff;
+    padding: 7px 15px;
+    position: absolute;
+    right: 50px;
+    border-radius: 5px;
+    background-color: gray;
+    display: none;
+}
+/* Category Styling */
+@media (min-width:700px){
+  .btn-container{
+    margin: 2em 0 3em;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+  }
+  .btn-container button{
+    padding: 10px 20px;
+    color: #fff;
+    background:rgb(200, 0, 70);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-style: oblique
+  }
+  .btn-container button:hover{
+    background:radial-gradient(#fff,#ffd6d6) ;
+    color: black;
+  }
+  
+}
+
+/* Menu styling */
+
+    .products-container {
+       margin: 0 100px 0 150px;
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+       justify-items: center;
+      }
+      .products-container .each {
+        margin-bottom: 1.5em;
+      }
+      
+      .products-container .each .add-to-cart{
+        position: relative;
+        color: white;
+        top: -120px;
+        left: 5px;
+        border: none;
+        border-radius: 7px;
+        cursor: pointer;
+        padding: 7px 20px;
+        background-color: rgb(200, 0, 70);
+        
+      }
+@media (max-width:1150px){
+       /* Menu styling */
+    .products-container {
+      grid-template-columns: 1fr 1fr;
+      
+    }
+}
+@media (max-width:700px){
+  /* sort btn */
+  button.sort{
+    display: inline;
+  }
+  /* Category styling */
+  .btn-container{
+      width: 180px;
+      height: 220px;
+      text-align: center;
+      background-color: grey;
+      position: relative;
+      left: -100%;
+      padding: 5px 0;
+      transition: all 300ms;
+      position: absolute;
+      top: 4em;
+    }
+    .btn-container.active{
+      left: 3em;
+    } 
+  .btn-container button{
+    padding: 3px 5px;
+    display: block;
+    gap: 30px;
+    margin: 7px 0 0 30px;
+    /* border-radius: 1px; */
+    
+    font-size: 18px;
+    text-transform: capitalize;
+    font-style: oblique
+  }
+
+  /* Menu styling */
+
+  .products-container {
+    grid-template-columns: 1fr ;
+    /* justify-items: center; */
+}
+  .products-container .each {
+  margin-bottom: 1.5em;
+  }
+
+.products-container .each .add-to-cart{
+position: relative;
+color: white;
+top: -120px;
+left: 5px;
+border: none;
+border-radius: 7px;
+cursor: pointer;
+padding: 7px 20px;
+background-color: rgb(200, 0, 70);
+
+}
+
+}

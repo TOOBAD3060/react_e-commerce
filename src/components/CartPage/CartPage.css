@@ -1,0 +1,112 @@
+/* CartContainer.js stlying  */
+section.empty-cart{
+    text-align: center;
+}
+section.empty-cart h4{
+    font-size: 23px;
+    font-style: oblique;
+    margin-bottom: 2em;
+}
+section.empty-cart a{
+    text-decoration: none;
+    color: darkslateblue;
+    font-size: 20px;
+}
+section.cart header{
+    margin: 2em 2em 2em 8em ;
+    display: flex;
+    background-color: rgb(51, 51, 51);
+    padding: 10px 5px;
+    justify-content: space-around;
+    color: #fff;
+}
+footer.cart{
+    position: relative;
+    margin-bottom: 3em;
+}
+footer.cart hr{
+    height: 25px;
+    width: 20%;
+    position: absolute;
+    right: 3em;
+    bottom: -0.5em;
+}
+footer.cart h4{
+    margin-top: 2em;
+    text-align: right;
+    position: relative;
+    left: -100px;
+    bottom: -2em;
+}
+footer.cart button.btn.clear-btn{
+    color: red;
+    position: relative;
+    left: 10em;
+    background-color: palevioletred;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+/* CartItem.js Styling */
+
+article.cart-item{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+    align-items: center;
+    height: 100px;
+}
+article.cart-item .pt-1{
+    display: flex;
+    gap: 20px;
+    color: gray;
+
+}
+article.cart-item .pt-1 .item-details{
+    line-height: 25px;
+}
+article.cart-item .pt-1 button{
+    border: none;
+    color: red;
+    background-color:gray;
+    border-radius: 5px;
+    padding: 5px ;
+    cursor: pointer;
+}
+article.cart-item .pt-2 {
+line-height: 30px;
+text-align: center;
+}
+article.cart-item .pt-2 p{
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 700;
+    font-style:oblique ;
+}
+article.cart-item .pt-2 p + button {
+    padding: 6px;
+}
+article.cart-item .pt-2 button{
+    color: #fff;
+    background-color: gray;
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:700px){
+    section.cart header{
+        margin: 2em 0 2em 3em ;
+        
+    }
+    article.cart-item .pt-1{
+        gap: 7px;
+    }
+    footer.cart button.btn.clear-btn{
+        position: relative;
+        left: 4.5em;
+    }
+}

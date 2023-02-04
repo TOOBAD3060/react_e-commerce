@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background:radial-gradient(#fff,#ffd6d6); */
+}
+.nav .nav-menus {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+.nav div + img {
+    cursor: pointer;
+    display: none;
+}
+.nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nav ul li a:hover{
+    color: gray;
+} 
+.nav ul li a:active{
+    color: green;
+}
+
+.nav .cart span{
+    position: relative;
+    left: -17px;    
+    color: red;
+    font-size: 25px;
+    font-style: italic;
+    z-index: 100;
+}
+
+@media (max-width:801px) {
+    
+    .nav ul{
+        position: absolute;
+        display: block;
+        line-height: 30px;
+        top: -200px;
+        left: 40%;
+        background-color: grey;
+        padding: 15px 30px ;
+        border-radius: 5px;
+        transition: all 0.5s
+    }
+    /* .nav ul.active{
+        top: 35px;
+    } */
+    .nav div + img {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .nav ul li a:hover{
+        color: #fff;
+    } 
+    
+}
+@media (max-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav div + img {
+        cursor: pointer;
+        display: inline;
+    }
+
+    .nav ul{
+        position: absolute;
+        display: block;
+        line-height: 30px;
+        top: 80px;
+        left: -100%;
+        width: 95%;
+        text-align: center;
+        z-index: 100;
+    }
+    .nav ul.active {
+        top: 80px;
+        left: 10px;
+    }
+    .nav ul + img {
+        cursor: pointer;
+        display: inline;
+    }
+    .nav ul li:hover {
+        background-color: #000;
+        cursor: pointer;
+        color: palevioletred;
+    }
+    .nav ul li a{
+        color: #fff;
+    }
+    .nav ul li a:hover{
+        color: palevioletred;
+    } 
+    
+}
