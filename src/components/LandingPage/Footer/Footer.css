@@ -5,6 +5,7 @@ footer.landing-page{
     align-items: center;
     background-color: black;
     color: gray;
+    padding-left: 1em;
   }
   footer.landing-page h3{
     color: #fff;

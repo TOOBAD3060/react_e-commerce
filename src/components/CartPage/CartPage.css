@@ -72,6 +72,7 @@ article.cart-item .pt-1 button{
     padding: 5px ;
     cursor: pointer;
 }
+
 article.cart-item .pt-2 {
 line-height: 30px;
 text-align: center;
@@ -104,6 +105,29 @@ article.cart-item .pt-2 button{
     }
     article.cart-item .pt-1{
         gap: 7px;
+    }
+    div.pt-1 img{
+        width: 70px;
+    }
+   
+    footer.cart button.btn.clear-btn{
+        position: relative;
+        left: 4.5em;
+    }
+}
+
+
+@media (max-width:500px){
+   
+    article.cart-item .pt-1 div.item-details p{
+        width: 100px;
+    }
+    div.pt-1 img{
+        width: 60px;
+    }
+    .pt-2,.pt-3{
+        position: relative;
+        left: -1.6em;
     }
     footer.cart button.btn.clear-btn{
         position: relative;

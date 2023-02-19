@@ -22,7 +22,7 @@ const DisplayProducts = () => {
                               <img  src={img} alt='market' />
                               <p>{name} </p>
                               <p>{rating}</p>
-                              <span>${price}</span>
+                              <span>{price}</span>
                           </div>
                 })}
 

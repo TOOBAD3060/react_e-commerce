@@ -18,7 +18,7 @@ export const products = [
     {
         id:1,
         img: product1,
-        price: 26.08,
+        price: 26,
         rating: 'good',
         name:'Red Printed T-Shirt',
         category:'shirt',

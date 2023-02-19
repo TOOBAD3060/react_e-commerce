@@ -87,6 +87,7 @@ button.sort{
       transition: all 300ms;
       position: absolute;
       top: 4em;
+      z-index: 11111111;
     }
     .btn-container.active{
       left: 3em;
@@ -106,7 +107,9 @@ button.sort{
   /* Menu styling */
 
   .products-container {
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
+    position: relative;
+    left: -1.5em;;
     /* justify-items: center; */
 }
   .products-container .each {

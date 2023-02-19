@@ -17,7 +17,7 @@ import product12 from './images/product-12.jpg'
 export const featuredProducts = [
     {
         img: product1,
-        price: '$26.08',
+        price: '$26',
         rating: 'good',
         name:'Red Printed T-Shirt'
     },
@@ -25,7 +25,7 @@ export const featuredProducts = [
         img: product2,
         price: '$26',
         rating: 'good',
-        name:'HRX Sports Shoes '
+        name:'HRX Sports Shoes'
     },
     {
         img: product3,
