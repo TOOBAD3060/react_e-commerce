@@ -72,7 +72,7 @@ function App() {
   return (
     <div className="app">
        <Nav showHome={showHome} showCart={showCart} showAccount={showAccount}  showProduct={showProduct}  />
-       {isShowPage.home && <LandingPage />}
+       {isShowPage.home && <LandingPage showProduct={showProduct}  />}
        {isShowPage.account && <Account />}
        {isShowPage.product && <ProductPage />}
        {isShowPage.cart && <CartPage showProduct={showProduct} />}

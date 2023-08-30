@@ -5,7 +5,7 @@ import { latestProducts2 } from '../../../data'
 
 import { useGlobalContext } from '../../CartPage/context'
 import './Display.css'
-const DisplayProducts = () => {
+const DisplayProducts = ({showProduct}) => {
   const {currentCartItems} = useGlobalContext()
   const addToCart = (id) => {
       
@@ -20,9 +20,14 @@ const DisplayProducts = () => {
                   const {img,price,rating,name} = eachProduct
                   return <div key={index} className='each'>
                               <img  src={img} alt='market' />
+                                
                               <p>{name} </p>
                               <p>{rating}</p>
                               <span>{price}</span>
+
+                              <p className='explore-products' onClick={showProduct}>
+                                  <button>Explore Product</button>
+                             </p>
                           </div>
                 })}
 
@@ -37,10 +42,15 @@ const DisplayProducts = () => {
                 const {img,price,rating,name} = eachProduct
                 return <div key={index} className='each'>
                             <img  src={img} alt='market' />
+                            
                             <p>{name} </p>
                             <p>{rating}</p>
                             
                             <span>{price}</span>
+
+                            <p className='explore-products' onClick={showProduct}>
+                                  <button>Explore Product</button>
+                             </p>
                         </div>
               })}
           </div>
@@ -50,9 +60,14 @@ const DisplayProducts = () => {
                 const {img,price,rating,name} = eachProduct
                 return <div key={index} className='each'>
                             <img  src={img} alt='market' />
+                            
                             <p>{name} </p>
                             <p>{rating}</p>
                             <span>{price}</span>
+
+                            <p className='explore-products' onClick={showProduct}>
+                                  <button>Explore Product</button>
+                            </p>
                         </div>
               })}
           </div>

@@ -6,14 +6,14 @@ import './LandingPage.css'
 import Nav from './NAV/Nav'
 import SmartBand from './SmartBand/SmartBand'
 
-const LandingPage = () => {
+const LandingPage = ({showProduct}) => {
   return (
     <>
     <div className="nav-first_section">
         {/* <Nav /> */}
         <FirstSection />
       </div>
-      <DisplayProducts />
+      <DisplayProducts  showProduct={showProduct} />
       <SmartBand />
       <Footer />
     </>

@@ -36,6 +36,24 @@ h2::after{
 .each span{
     color: brown;
 }
+.each p.explore-products button {
+    animation: shine-color 2s infinite;
+    padding: 10px 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+}
+
+@keyframes shine-color{
+    from {
+        color: brown;
+    }
+    to {
+        color: rosybrown;
+    }
+}
+
+
 @media (max-width:790px){
     .products{
         display: grid;
@@ -45,5 +63,10 @@ h2::after{
     }
     .products.mobile-hidden{
         display: none;
+    }
+
+    .each p.explore-products button{
+        top: 5px;
+        padding: 5px 10px;
     }
 }
