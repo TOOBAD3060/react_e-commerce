@@ -32,9 +32,9 @@ const ProductPage = () => {
   return ( 
     <>
     {/* <Nav /> */}
-    <button className='sort' onClick={showHideSort}>Sort</button>
-    <Categories showSort={showSort} showHideSort={showHideSort} categories={allCategories} filterItems={filterItems} />
     
+    <Categories showSort={showSort} showHideSort={showHideSort} categories={allCategories} filterItems={filterItems} />
+    <button className='sort' onClick={showHideSort}>Sort</button>
     <Menu addItems= {addToCart} items={menuItems} />
     </>
     

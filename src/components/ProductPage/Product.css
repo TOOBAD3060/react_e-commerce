@@ -5,22 +5,23 @@ button{
 /* Sort btn */
 button.sort{
     color: #fff;
-    padding: 7px 15px;
+    padding: 7px 12px;
     position: absolute;
-    right: 50px;
+    right: 26px;
     border-radius: 5px;
     background-color: gray;
     display: none;
 }
 /* Category Styling */
 @media (min-width:700px){
+
   .btn-container{
     margin: 2em 0 3em;
     display: flex;
     justify-content: center;
-    gap: 30px;
-    
+    gap: 30px;   
   }
+  
   .btn-container button{
     padding: 10px 20px;
     color: #fff;
@@ -52,6 +53,7 @@ button.sort{
       }
       
       .products-container .each .add-to-cart{
+        display: none;
         position: relative;
         color: white;
         top: -120px;
@@ -61,8 +63,10 @@ button.sort{
         cursor: pointer;
         padding: 7px 20px;
         background-color: rgb(200, 0, 70);
-        
-      }
+         }
+         .products-container .each .add-to-cart.visible{
+          display: inline-block;
+         }
 @media (max-width:1150px){
        /* Menu styling */
     .products-container {
@@ -77,31 +81,33 @@ button.sort{
   }
   /* Category styling */
   .btn-container{
-      width: 180px;
-      height: 220px;
-      text-align: center;
+      /* margin-top: 3em; */
+      display: grid;
+      gap: 20px;
+      width: 80%;
+      height: 60vh;
+      justify-content: center;
+      align-content: center;
       background-color: grey;
       position: relative;
       left: -100%;
       padding: 5px 0;
       transition: all 300ms;
       position: absolute;
-      top: 4em;
+      top: 7.5em;
       z-index: 11111111;
     }
     .btn-container.active{
       left: 3em;
     } 
   .btn-container button{
-    padding: 3px 5px;
-    display: block;
+    padding: 11px 30px;
+    background-color: #ffd6d6;
     gap: 30px;
-    margin: 7px 0 0 30px;
-    /* border-radius: 1px; */
-    
+    color: gray;    
     font-size: 18px;
     text-transform: capitalize;
-    font-style: oblique
+    border-radius: 20px;
   }
 
   /* Menu styling */
@@ -110,7 +116,7 @@ button.sort{
     grid-template-columns: 1fr;
     position: relative;
     left: -1.5em;;
-    /* justify-items: center; */
+    
 }
   .products-container .each {
   margin-bottom: 1.5em;

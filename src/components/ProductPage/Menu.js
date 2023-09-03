@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 
 const Menu = ({items,addItems}) => {
   const [isAddToCartBtn,setIsAddToCartBtn] = useState(false)
+
+    const handleShowCartBtn = () => setIsAddToCartBtn(true)
+    const handleHideCartBtn = () => setIsAddToCartBtn(false)
   return (
     <div className='products-container'>
         {items.map((eachItem)=>{
@@ -10,13 +13,13 @@ const Menu = ({items,addItems}) => {
               addItems(id)
               console.log(1111111)
             } }>
-            <img  src={img} alt='market' />
-            <p>{name} </p>
-            <p>{rating}</p>
+            <img onMouseOver={handleShowCartBtn} onMouseOut={handleHideCartBtn}   src={img} alt='market' />
+            <p> {name} </p>
+            <p> {rating} </p>
             
-            <span>${price}</span>
+            <span >${price}</span>
 
-            {isAddToCartBtn && <button className='add-to-cart'>Add To Cart</button>}
+            <button className={isAddToCartBtn ? 'add-to-cart visible ' : 'add-to-cart'} >Add To Cart</button>
         </div>
         })}
 
